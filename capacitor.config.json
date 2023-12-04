@@ -1,0 +1,12 @@
+{
+  "appId": "mg.manalazy.spin",
+  "appName": "Spin",
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
