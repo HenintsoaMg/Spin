@@ -1,5 +1,8 @@
 module.exports = {
   plugins: {
-    'postcss-preset-env': {},
+    "postcss-preset-env": {},
+    "postcss-import": {},
+    tailwindcss: {},
+    autoprefixer: {},
   },
 };

@@ -1,31 +1,9 @@
-import React from 'react';
-import {
-  Page,
-  Navbar,
-  NavTitle,
-  NavTitleLarge,
-  Link,
-  Toolbar,
-  Block,
-} from 'framework7-react';
+import React from "react";
+import { Page } from "framework7-react";
 
 const HomePage = () => (
   <Page name="home">
-    {/* Top Navbar */}
-    <Navbar large>
-      <NavTitle>Spin</NavTitle>
-      <NavTitleLarge>Spin</NavTitleLarge>
-    </Navbar>
-    {/* Toolbar */}
-    <Toolbar bottom>
-      <Link>Left Link</Link>
-      <Link>Right Link</Link>
-    </Toolbar>
-    {/* Page content */}
-    <Block>
-      <p>Here is your blank Framework7 app. Let's see what we have here.</p>
-    </Block>
-
+    <h1 className="text-3xl font-bold underline">Hello world!</h1>
   </Page>
 );
 export default HomePage;
