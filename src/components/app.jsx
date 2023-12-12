@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { getDevice }  from '../js/framework7-custom.js';
+import React from 'react';
+import { getDevice }  from 'framework7/lite-bundle';
 import {
   f7,
   f7ready,
