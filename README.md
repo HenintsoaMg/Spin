@@ -23,7 +23,7 @@ Framework7 app created with following options:
   },
   "customBuild": true,
   "customBuildConfig": {
-    "rtl": true,
+    "rtl": false,
     "darkTheme": true,
     "lightTheme": true,
     "themes": [

@@ -16,7 +16,7 @@
   },
   "customBuild": true,
   "customBuildConfig": {
-    "rtl": true,
+    "rtl": false,
     "darkTheme": true,
     "lightTheme": true,
     "themes": [
