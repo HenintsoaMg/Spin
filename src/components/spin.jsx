@@ -1,3 +1,4 @@
+import { Button } from "framework7-react";
 import React, { useState } from "react";
 
 const DATA = [
@@ -81,10 +82,30 @@ const Spin = () => {
   const [data, setData] = useState(DATA);
   const arrayData = [...data];
 
+  const makeSpin = () => {
+    let spinner = document.getElementById("spinner");
+    spinner.style.setProperty("--animation-iteration", 5);
+    spinner.style.setProperty("--animation-delay", "1s");
+    document.documentElement.style.setProperty("--animation-deg", "360deg");
+    setTimeout(() => {
+      spinner.style.setProperty("--animation-delay", "2s");
+      spinner.style.setProperty("--animation-iteration", 5);
+    }, 4500);
+  };
+
   return (
     <div
-      className={`w-96 h-96 bg-white rounded-full relative overflow-hidden duration-[5000ms] border-blue-950 border-8`}
+      id="spinner"
+      className={`w-96 h-96 bg-white rounded-full relative overflow-hidden border-blue-950 border-8`}
     >
+      <Button
+        raised
+        fill
+        className="absolute top-[39%] left-[39%] z-10 border-8 border-b-slate-800 border-t-slate-800 border-lime-600 border-r-lime-600 transform -translate-x-1/2 -translate-y-1/2 outline-none rounded-full h-20 w-20"
+        onClick={makeSpin}
+      >
+        Spin
+      </Button>
       {shuffle(arrayData).map(({ id, text }, index) => {
         return <Sector text={text} key={id} index={index} />;
       })}
